@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31624.102
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Generate chatacters, 5th edition", "Generate chatacters, 5th edition.csproj", "{DB1955F7-212A-4080-BA9A-F3853D2FB17B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{DB1955F7-212A-4080-BA9A-F3853D2FB17B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DB1955F7-212A-4080-BA9A-F3853D2FB17B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DB1955F7-212A-4080-BA9A-F3853D2FB17B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DB1955F7-212A-4080-BA9A-F3853D2FB17B}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {DB829BB5-8135-4B42-A12A-9CB238E71098}
+	EndGlobalSection
+EndGlobal
