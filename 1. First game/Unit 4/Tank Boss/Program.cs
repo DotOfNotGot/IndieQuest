@@ -8,27 +8,15 @@ namespace Tank_Boss
         {
             var random = new Random();
             int tankDistance = random.Next(40, 71);
-
-
             Console.WriteLine("DANGER! A tank is approaching our position. Your artilery unit is our only hope!");
             Console.WriteLine("\nWhat is your name, commander?");
-            
-            Console.Write("\nEnter name: " );
+
+            Console.Write("\nEnter name: ");
             string playerName = Console.ReadLine();
             Console.Clear();
-
-
-
-
-
-
             int Shot;
-
-
-
-
             bool miss;
-           do
+            do
             {
                 Console.WriteLine("\nHere is the map of the battlefield:");
                 Console.Write("\n_/");
@@ -43,14 +31,11 @@ namespace Tank_Boss
                         Console.Write("_");
                     }
                 }
-
-
                 int tankMove = random.Next(1, 16);
                 Console.WriteLine($"\nAim your shot, " + playerName);
                 Console.Write("Enter distance: ");
                 Shot = Convert.ToInt32(Console.ReadLine());
-                
-                
+
                 for (int i = 0; i < 78; i++)
                 {
                     if (Shot == i)
@@ -61,9 +46,7 @@ namespace Tank_Boss
                     {
                         Console.Write(" ");
                     }
-
                 }
-                
                 if (tankDistance == Shot)
                 {
                     Console.WriteLine("\nBOOM! Your aim is legendary and the tank is destroyed");
@@ -81,12 +64,11 @@ namespace Tank_Boss
                 }
                 if (miss)
                 {
-                    
+
                     Console.WriteLine("The tank advances!");
                     tankDistance = tankDistance - tankMove;
                     Console.WriteLine("Press enter to see the new battlefield.");
                 }
-
                 Console.ReadKey();
                 Console.Clear();
 
@@ -95,7 +77,6 @@ namespace Tank_Boss
                     Console.WriteLine("You suck.");
                 }
             } while (tankDistance > 0 && miss);
-
         }
-}
+    }
 }

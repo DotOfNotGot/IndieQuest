@@ -164,7 +164,6 @@ namespace Minotaur_s_lair
                     Environment.Exit(0);
                 }
             }
-
         }
         static void DrawMap()
         {
@@ -174,7 +173,6 @@ namespace Minotaur_s_lair
             {
                 for (int x = 0; x < width; x++)
                 {
-
                     Console.ForegroundColor = mapColor[x, y];
                     Console.Write(map[x, y]);
                 }

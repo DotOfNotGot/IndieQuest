@@ -16,19 +16,15 @@ namespace BowlingFrameRevised
             if(firstBowl == 10)    
             {
                 Console.WriteLine("First roll: X");
-                
             }
            else if (firstBowl == 0)
             {
-                
                 Console.WriteLine("First roll: -");
-                   
             }
             else
             {
                 Console.WriteLine($"First roll: {firstBowl}");
             }
-
             if (firstBowl == 10)
             {
                 //This is meant to be empty
@@ -45,7 +41,6 @@ namespace BowlingFrameRevised
             {
                 Console.WriteLine($"Second roll: {secondBowl}");
             }
-
             Console.WriteLine($"Knocked pins: {knockedPins}");
         }
     }
