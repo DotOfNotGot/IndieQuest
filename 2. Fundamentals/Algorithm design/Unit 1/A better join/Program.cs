@@ -27,7 +27,6 @@ namespace A_better_join
                 if (useSerialComma)
                 {
                     itemsCopy[count - 1] = $"and {items[count - 1]}";
-                    
                 }
                 else
                 {

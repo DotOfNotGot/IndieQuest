@@ -46,6 +46,7 @@ namespace Minotaur_s_lair
                         playerX = x;
                         playerY = y;
                         map[x, y] = '☺';
+                        mapColor[x, y] = ConsoleColor.Yellow;
                     }
                     else if ((map[x, y] == ' ') && (y < 3))
                     {
@@ -53,19 +54,12 @@ namespace Minotaur_s_lair
                         if (randomTree == 0)
                         {
                             map[x, y] = '♠';
+                            mapColor[x, y] = ConsoleColor.Green;
                         }
                     }
-                    if (map[x, y] == 'M')
+                    else if (map[x, y] == 'M')
                     {
                         mapColor[x, y] = ConsoleColor.Red;
-                    }
-                    else if (map[x, y] == '☺')
-                    {
-                        mapColor[x, y] = ConsoleColor.Yellow;
-                    }
-                    else if (map[x, y] == '♠')
-                    {
-                        mapColor[x, y] = ConsoleColor.Green;
                     }
                     else
                     {
@@ -102,12 +96,11 @@ namespace Minotaur_s_lair
                             Console.Write(map[playerX, playerY]);
                             playerX--;
 
-
                             win = true;
                         }
                         else
                         {
-                            
+                            // Do nothing
                         }
                         break;
                     case ConsoleKey.UpArrow:
@@ -120,7 +113,7 @@ namespace Minotaur_s_lair
                         }
                         else
                         {
-                           
+                            // Do nothing
                         }
                         break;
                     case ConsoleKey.RightArrow:
@@ -133,9 +126,8 @@ namespace Minotaur_s_lair
                         }
                         else
                         {
-                            
+                            // Do nothing
                         }
-
                         break;
                     case ConsoleKey.DownArrow:
                         if (map[playerX, playerY + 1] == ' ')
@@ -148,7 +140,7 @@ namespace Minotaur_s_lair
                         }
                         else
                         {
-                            
+                            // Do nothing
                         }
                         break;
                 }
